@@ -23,6 +23,7 @@
   background-position: 0% 0%;
   content: "";
   height: 100%;
+
   position: absolute;
   transition: background-position 1000ms ease-in-out;
   width: 100%;
