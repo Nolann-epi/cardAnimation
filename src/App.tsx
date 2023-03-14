@@ -79,7 +79,7 @@ const App = () => {
         <h2 className="text-2xl text-slate-700">Animation 3</h2>
       </div>
       <div
-          className=" flex-row w-44 px-2 space-x-4 items-center flex self-start ml-12 mt-24 cursor-pointer hover:bg-[#bdc4e1] rounded-lg my-1"
+          className=" flex-row w-48 py-2 px-4 space-x-4 items-center flex self-start ml-12 mt-24 cursor-pointer hover:bg-[#bdc4e1] rounded-lg my-1"
           onClick={() => window.open("https://github.com/Nolann-epi/cardAnimation")}
         >
           <AiFillGithub size={40} className="cursor-pointer text-[#121212]" />
