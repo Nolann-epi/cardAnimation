@@ -11,7 +11,7 @@ import { IoInfiniteSharp } from "react-icons/io5";
 
 const App = () => {
   return (
-    <div className="h-screen w-screen flex flex-col">
+    <div className="h-screen w-screen flex flex-col bg-slate-400">
       <div className="flex justify-center items-center space-x-5 pt-32">
         <div className="card1">
           <div className="first_col_card1">
@@ -74,10 +74,17 @@ const App = () => {
         </div>
       </div>
       <div className="flex justify-evenly space-x-40 pt-20">
-        <h2 className="text-2xl text-slate-500">Animation 1</h2>
-        <h2 className="text-2xl text-slate-500">Animation 2</h2>
-        <h2 className="text-2xl text-slate-500">Animation 3</h2>
+        <h2 className="text-2xl text-slate-700">Animation 1</h2>
+        <h2 className="text-2xl text-slate-700">Animation 2</h2>
+        <h2 className="text-2xl text-slate-700">Animation 3</h2>
       </div>
+      <div
+          className=" flex-row w-44 px-2 space-x-4 items-center flex self-start ml-12 mt-24 cursor-pointer hover:bg-[#bdc4e1] rounded-lg my-1"
+          onClick={() => window.open("https://github.com/Nolann-epi/cardAnimation")}
+        >
+          <AiFillGithub size={40} className="cursor-pointer text-[#121212]" />
+          <div className="text-xl text-[#121212] ">Nolann-epi</div>
+        </div>
     </div>
   );
 };
