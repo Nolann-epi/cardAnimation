@@ -99,3 +99,13 @@
 .card2:hover .backend_text {
   opacity: 0;
 }
+
+.card2:hover .element {
+  opacity: 1;
+}
+
+
+.element {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}

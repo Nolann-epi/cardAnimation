@@ -12,40 +12,40 @@ import { IoInfiniteSharp } from "react-icons/io5";
 const App = () => {
   return (
     <div className="h-screen w-screen flex flex-col">
-      <div className="flex justify-center items-center space-x-5 pt-20">
+      <div className="flex justify-center items-center space-x-5 pt-32">
         <div className="card1">
           <div className="first_col_card1">
-            <DiMongodb size={90} />
-            <SiMysql size={90} />
-            <AiFillGithub size={90} />
+            <DiMongodb className="element" size={90} />
+            <SiMysql className="element" size={90} />
+            <AiFillGithub className="element"  size={90} />
           </div>
           <div className="second_col_card1">
-            <SiJira size={90} />
-            <FiFigma size={90} />
-            <SiPostman size={90} />
+            <SiJira className="element" size={90} />
+            <FiFigma className="element" size={90} />
+            <SiPostman className="element" size={90} />
           </div>
           <div className="third_col_card1">
-            <SiGnubash size={90} />
-            <FaDocker size={90} />
-            <IoInfiniteSharp size={90} />
+            <SiGnubash className="element" size={90} />
+            <FaDocker className="element" size={90} />
+            <IoInfiniteSharp className="element" size={90} />
           </div>
           <div className="backend_text">Backend</div>
         </div>
         <div className="card2">
           <div className="first_row_card2">
-            <DiMongodb size={90} />
-            <SiMysql size={90} />
-            <AiFillGithub size={90} />
+            <DiMongodb className="element" size={90} />
+            <SiMysql className="element" size={90} />
+            <AiFillGithub className="element" size={90} />
           </div>
           <div className="second_row_card2">
-            <SiJira size={90} />
-            <FiFigma size={90} />
-            <SiPostman size={90} />
+            <SiJira className="element" size={90} />
+            <FiFigma className="element" size={90} />
+            <SiPostman className="element" size={90} />
           </div>
           <div className="third_row_card2">
-            <SiGnubash size={90} />
-            <FaDocker size={90} />
-            <IoInfiniteSharp size={90} />
+            <SiGnubash className="element" size={90} />
+            <FaDocker className="element" size={90} />
+            <IoInfiniteSharp className="element" size={90} />
           </div>
           <div className="backend_text">Backend</div>
         </div>
@@ -57,8 +57,8 @@ const App = () => {
           </div>
           <div className="second_row_card3">
             <SiJira size={90} />
-            <FiFigma size={90} />
-            <SiPostman size={90} />
+            <FiFigma  size={90} />
+            <SiPostman  size={90} />
           </div>
           <div className="third_row_card3">
             <SiGnubash size={90} />
