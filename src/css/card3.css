@@ -88,3 +88,13 @@
   font-weight: 600;
   font-size: xx-large;
 }
+
+.card3:hover .element_scale {
+  scale: 1;
+}
+
+
+.element_scale {
+  scale: 0.5;
+  transition: scale 0.3s 0.1s;
+}

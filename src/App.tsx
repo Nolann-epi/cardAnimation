@@ -51,19 +51,19 @@ const App = () => {
         </div>
         <div className="card3">
           <div className="first_row_card3">
-            <DiMongodb size={90} />
-            <SiMysql size={90} />
-            <AiFillGithub size={90} />
+            <DiMongodb className="element_scale" size={90} />
+            <SiMysql className="element_scale" size={90} />
+            <AiFillGithub className="element_scale" size={90} />
           </div>
           <div className="second_row_card3">
-            <SiJira size={90} />
-            <FiFigma  size={90} />
-            <SiPostman  size={90} />
+            <SiJira className="element_scale" size={90} />
+            <FiFigma  className="element_scale" size={90} />
+            <SiPostman  className="element_scale" size={90} />
           </div>
           <div className="third_row_card3">
-            <SiGnubash size={90} />
-            <FaDocker size={90} />
-            <IoInfiniteSharp size={90} />
+            <SiGnubash className="element_scale" size={90} />
+            <FaDocker className="element_scale" size={90} />
+            <IoInfiniteSharp className="element_scale" size={90} />
           </div>
           <div className="left">
             <span className="left_text">Back</span>
