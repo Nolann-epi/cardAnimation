@@ -1,0 +1,88 @@
+.card1 {
+    background-color: rgb(10, 25, 47);
+    border: 0.5vmin solid black;
+    cursor: pointer;
+    position: relative;
+    width: 56vmin;
+    height: 56vmin;
+    border-radius: 10%;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-evenly;
+  }
+  
+  .card1:before {
+    background: linear-gradient(
+      130deg,
+      transparent 0% 20%, 
+      rgb(10, 25, 80) 44% 60%,
+      rgb(100, 255, 218) 60% 100%
+      
+    );
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: background-position 1s ease-in-out;
+    width: 100%;
+    border-radius: 10%;
+    transform: scale(1.02);
+  }
+  
+  .card1:hover .backend_text {
+    opacity: 0;
+  }
+  
+  .first_col_card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    background-color: transparent;
+    top: -100%;
+    transition: all 0.8s 0.2s;
+  }
+  
+  .second_col_card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    height: 100%;
+    background-color: transparent;
+    top: 100%;
+    transition: all 0.8s 0.3s;
+  }
+  
+  .third_col_card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    top: -100%;
+    transition: all 0.8s 0.4s;
+  }
+  
+  
+  .card1:hover::before {
+    background-position: 100% 100%;
+    transition: 1000ms ease-in-out;
+  }
+  
+  .card1:hover .first_col_card1 {
+    transform: translateY(100%);
+  }
+  
+  .card1:hover .second_col_card1 {
+    transform: translateY(-100%);
+  }
+  
+  .card1:hover .third_col_card1 {
+    transform: translateY(100%);
+  }

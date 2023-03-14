@@ -1,0 +1,91 @@
+
+.card3 {
+  background-color: rgb(100, 255, 218);
+  border: 0.5vmin solid black;
+  cursor: pointer;
+  position: relative;
+  width: 56vmin;
+  height: 56vmin;
+  border-radius: 10%;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.left {
+  flex: 1;
+  background-color: rgb(10, 25, 80);
+  transition: transform 0.8s;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.right {
+  flex: 1;
+  background-color: rgb(10, 25, 80);
+  transition: transform 0.8s;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.card3:hover .left {
+  transform: translateX(-100%);
+}
+
+.card3:hover .right {
+  transform: translateX(100%);
+}
+
+.first_row_card3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: transparent;
+  left: 0;
+  top: 10%;
+}
+
+.second_row_card3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: transparent;
+  left: 0;
+  top: 35%;
+}
+
+.third_row_card3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: transparent;
+  left: 0;
+  top: 65%;
+}
+
+
+.left_text {
+  color: rgb(100, 255, 218);
+  font-size: 2.5vmin;
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.right_text {
+  position: relative;
+  color: rgb(100, 255, 218);
+  font-size: 2.5vmin;
+  font-weight: 600;
+  font-size: xx-large;
+}

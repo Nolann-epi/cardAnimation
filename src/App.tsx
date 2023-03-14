@@ -1,5 +1,7 @@
 import React from "react";
-import "./css/app.css";
+import "./css/card1.css"
+import "./css/card2.css"
+import "./css/card3.css"
 import { DiMongodb } from "react-icons/di";
 import { SiGnubash, SiJira, SiMysql, SiPostman } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
@@ -11,18 +13,18 @@ const App = () => {
   return (
     <div className="h-screen w-screen flex flex-col">
       <div className="flex justify-center items-center space-x-5 pt-20">
-      <div className="card">
-          <div className="first_col">
-            <DiMongodb  size={90} />
+        <div className="card1">
+          <div className="first_col_card1">
+            <DiMongodb size={90} />
             <SiMysql size={90} />
             <AiFillGithub size={90} />
           </div>
-          <div className="second_col">
+          <div className="second_col_card1">
             <SiJira size={90} />
             <FiFigma size={90} />
             <SiPostman size={90} />
           </div>
-          <div className="third_col">
+          <div className="third_col_card1">
             <SiGnubash size={90} />
             <FaDocker size={90} />
             <IoInfiniteSharp size={90} />
@@ -30,17 +32,17 @@ const App = () => {
           <div className="backend_text">Backend</div>
         </div>
         <div className="card2">
-          <div className="first_row">
+          <div className="first_row_card2">
             <DiMongodb size={90} />
             <SiMysql size={90} />
             <AiFillGithub size={90} />
           </div>
-          <div className="second_row">
+          <div className="second_row_card2">
             <SiJira size={90} />
             <FiFigma size={90} />
             <SiPostman size={90} />
           </div>
-          <div className="third_row">
+          <div className="third_row_card2">
             <SiGnubash size={90} />
             <FaDocker size={90} />
             <IoInfiniteSharp size={90} />
@@ -48,26 +50,26 @@ const App = () => {
           <div className="backend_text">Backend</div>
         </div>
         <div className="card3">
-          <div className="first_row_card_3">
+          <div className="first_row_card3">
             <DiMongodb size={90} />
             <SiMysql size={90} />
             <AiFillGithub size={90} />
           </div>
-          <div className="second_row_card_3">
+          <div className="second_row_card3">
             <SiJira size={90} />
             <FiFigma size={90} />
             <SiPostman size={90} />
           </div>
-          <div className="third_row_card_3">
+          <div className="third_row_card3">
             <SiGnubash size={90} />
             <FaDocker size={90} />
             <IoInfiniteSharp size={90} />
           </div>
           <div className="left">
-            <span className="back_text">Back</span>
+            <span className="left_text">Back</span>
           </div>
           <div className="right">
-            <span className="end_text">end</span>
+            <span className="right_text">end</span>
           </div>
         </div>
       </div>
