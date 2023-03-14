@@ -1,28 +1,80 @@
 import React from "react";
 import "./css/app.css";
-import { DiAndroid } from "react-icons/di";
-import { FaBeer } from 'react-icons/fa';
+import { DiMongodb } from "react-icons/di";
+import { SiGnubash, SiJira, SiMysql, SiPostman } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
+import { FaDocker } from "react-icons/fa";
+import { FiFigma } from "react-icons/fi";
+import { IoInfiniteSharp } from "react-icons/io5";
 
 const App = () => {
   return (
-    <div className="h-screen w-screen flex  justify-center items-center space-x-5">
+    <div className="h-screen w-screen flex flex-col">
+      <div className="flex justify-center items-center space-x-5 pt-20">
       <div className="card">
-        <div className="logo_row">
-          <img className="element" alt="expressJS" src="https://github.com/Nolann-epi/cardAnimation/blob/main/assets/icons8-nodejs-96.png" height={50} width={50} />
-          
-          <FaBeer className="element_center" size={90} />
-          <DiAndroid className="element" size={90} />
+          <div className="first_col">
+            <DiMongodb  size={90} />
+            <SiMysql size={90} />
+            <AiFillGithub size={90} />
+          </div>
+          <div className="second_col">
+            <SiJira size={90} />
+            <FiFigma size={90} />
+            <SiPostman size={90} />
+          </div>
+          <div className="third_col">
+            <SiGnubash size={90} />
+            <FaDocker size={90} />
+            <IoInfiniteSharp size={90} />
+          </div>
+          <div className="backend_text">Backend</div>
         </div>
-        <div className="logo_row">
-          <DiAndroid className="element" size={90} />
-          <DiAndroid className="element_center" size={90} />
-          <FaBeer className="element" size={90} />
+        <div className="card2">
+          <div className="first_row">
+            <DiMongodb size={90} />
+            <SiMysql size={90} />
+            <AiFillGithub size={90} />
+          </div>
+          <div className="second_row">
+            <SiJira size={90} />
+            <FiFigma size={90} />
+            <SiPostman size={90} />
+          </div>
+          <div className="third_row">
+            <SiGnubash size={90} />
+            <FaDocker size={90} />
+            <IoInfiniteSharp size={90} />
+          </div>
+          <div className="backend_text">Backend</div>
         </div>
-        <div className="logo_row">
-          <FaBeer className="element" size={90} />
-          <DiAndroid className="element_center" size={90} />
-          <DiAndroid className="element" size={90} />
+        <div className="card3">
+          <div className="first_row_card_3">
+            <DiMongodb size={90} />
+            <SiMysql size={90} />
+            <AiFillGithub size={90} />
+          </div>
+          <div className="second_row_card_3">
+            <SiJira size={90} />
+            <FiFigma size={90} />
+            <SiPostman size={90} />
+          </div>
+          <div className="third_row_card_3">
+            <SiGnubash size={90} />
+            <FaDocker size={90} />
+            <IoInfiniteSharp size={90} />
+          </div>
+          <div className="left">
+            <span className="back_text">Back</span>
+          </div>
+          <div className="right">
+            <span className="end_text">end</span>
+          </div>
         </div>
+      </div>
+      <div className="flex justify-evenly space-x-40 pt-20">
+        <h2 className="text-2xl text-slate-500">Animation 1</h2>
+        <h2 className="text-2xl text-slate-500">Animation 2</h2>
+        <h2 className="text-2xl text-slate-500">Animation 3</h2>
       </div>
     </div>
   );

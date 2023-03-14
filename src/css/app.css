@@ -8,7 +8,9 @@
   border-radius: 10%;
   z-index: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: space-evenly;
 }
 
 .card:before {
@@ -23,56 +25,262 @@
   background-position: 0% 0%;
   content: "";
   height: 100%;
-
   position: absolute;
-  transition: background-position 1000ms ease-in-out;
+  transition: background-position 1s ease-in-out;
   width: 100%;
   border-radius: 10%;
-
   transform: scale(1.02);
 }
+
+.card:hover .backend_text {
+  opacity: 0;
+}
+
+.first_col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  background-color: transparent;
+  top: -100%;
+  transition: all 0.8s 0.2s;
+}
+
+.second_col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  height: 100%;
+  background-color: transparent;
+  top: 100%;
+  transition: all 0.8s 0.3s;
+}
+
+.third_col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  top: -100%;
+  transition: all 0.8s 0.4s;
+}
+
 
 .card:hover::before {
   background-position: 100% 100%;
   transition: 1000ms ease-in-out;
 }
 
-.logo_row {
-  background-color: transparent;
+.card:hover .first_col {
+  transform: translateY(100%);
+}
+
+.card:hover .second_col {
+  transform: translateY(-100%);
+}
+
+.card:hover .third_col {
+  transform: translateY(100%);
+}
+
+
+.card2 {
+  background-color: rgb(10, 25, 47);
+  border: 0.5vmin solid black;
+  cursor: pointer;
+  position: relative;
+  width: 56vmin;
+  height: 56vmin;
+  border-radius: 10%;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.card2:before {
+  background: linear-gradient(
+    130deg,
+    transparent 0% 20%, 
+    rgb(10, 25, 80) 44% 60%,
+    rgb(100, 255, 218) 60% 100%
+    
+  );
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  transition: background-position 1000ms ease-in-out;
+  width: 100%;
+  border-radius: 10%;
+  transform: scale(1.02);
+}
+
+.card2:hover::before {
+  background-position: 100% 100%;
+  transition: 1000ms ease-in-out;
+}
+
+
+.card2:hover .first_row {
+  transform: translateX(100%);
+}
+
+.card2:hover .second_row {
+  transform: translateX(-100%);
+}
+
+.card2:hover .third_row {
+  transform: translateX(100%);
+}
+
+.first_row {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  height: 0px;
+  justify-content: space-evenly;
   width: 100%;
-  z-index: 5;
+  background-color: transparent;
+  left: -100%;
+  transition: all 0.8s 0.2s;
 }
 
-
-.element {
+.second_row {
   position: relative;
-  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: transparent;
+  right: -100%;
+  transition: all 0.8s 0.3s;
+}
+
+.third_row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  left: -100%;
+  transition: all 0.8s 0.4s;
+}
+
+.backend_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: rgb(100, 255, 218);
+  font-size: 2.5vmin;
+  font-weight: 600;
+  font-size: xx-large;
+  transition: opacity 0.3s 0.5s;
+}
+
+.card2:hover .backend_text {
   opacity: 0;
 }
 
-.element_center {
+
+
+
+
+.card3 {
+  background-color: rgb(100, 255, 218);
+  border: 0.5vmin solid black;
+  cursor: pointer;
   position: relative;
-  margin-top: 30px;
-  opacity: 0;
+  width: 56vmin;
+  height: 56vmin;
+  border-radius: 10%;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.left {
+  flex: 1;
+  background-color: rgb(10, 25, 80);
+  transition: transform 0.8s;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.right {
+  flex: 1;
+  background-color: rgb(10, 25, 80);
+  transition: transform 0.8s;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.card3:hover .left {
+  transform: translateX(-100%);
+}
+
+.card3:hover .right {
+  transform: translateX(100%);
+}
+
+.first_row_card_3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: transparent;
+  left: 0;
+  top: 10%;
+}
+
+.second_row_card_3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: transparent;
+  left: 0;
+  top: 35%;
+}
+
+.third_row_card_3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: transparent;
+  left: 0;
+  top: 65%;
 }
 
 
-.card:hover .logo_row {
-  transition: height 900ms ease-in-out;
-  height: 33%;
+.back_text {
+  color: rgb(100, 255, 218);
+  font-size: 2.5vmin;
+  font-weight: 600;
+  font-size: xx-large;
 }
 
-.card:hover .element {
-  transition: opacity 1600ms ease-in-out;
-  opacity: 1;
-}
-
-.card:hover .element_center {
-  transition: opacity 1600ms ease-in-out;
-  opacity: 1;
+.end_text {
+  position: relative;
+  color: rgb(100, 255, 218);
+  font-size: 2.5vmin;
+  font-weight: 600;
+  font-size: xx-large;
 }
